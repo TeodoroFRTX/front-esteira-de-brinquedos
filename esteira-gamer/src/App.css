@@ -1,0 +1,25 @@
+body{
+  background-color: rgb(67, 67, 67);
+}
+.esteira-track {
+  overflow: hidden;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 16px 0;
+}
+
+.esteira-lane {
+  display: flex;
+  width: max-content;
+  animation: mover 6s linear infinite;
+}
+
+.esteira-item {
+  flex-shrink: 0;
+  padding: 0 24px;
+}
+
+@keyframes mover {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
